@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/font_normal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            style="@style/defaultTextView"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:gravity="start"
+            android:text="@string/post_id"/>
+
+        <TextView
+            android:id="@+id/tvPostId"
+            style="@style/defaultTextView"
+            android:layout_width="0dp"
+            android:layout_weight="0.75"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            style="@style/defaultTextView"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:gravity="start"
+            android:text="@string/title"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/defaultTextView"
+            android:layout_width="0dp"
+            android:layout_weight="0.75"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            style="@style/defaultTextView"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:gravity="start"
+            android:text="@string/posts"/>
+
+        <TextView
+            android:id="@+id/tvPost"
+            style="@style/defaultTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:background="@drawable/rectangle_shape"
+            android:maxLines="10"/>
+
+    </LinearLayout>
+
+</LinearLayout>
