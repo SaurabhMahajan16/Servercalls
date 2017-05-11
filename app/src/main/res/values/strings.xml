@@ -61,4 +61,20 @@
     <string name="post_id">Post ID</string>
     <string name="show_user_posts">Show User Posts</string>
     <string name="title">Title</string>
+    <string name="countrycode">+91</string>
+    <string name="gender">Select"\n"Gender:</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="password">password</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="dob">date of birth</string>
+    <string name="tv_toc">Agree Terms and Conditions</string>
+    <string name="signup">Sign Up</string>
+    <string name="remember_me">remember me</string>
+    <string name="signin">Sign In</string>
+    <string name="signinfb">Sign In With Facebook</string>
+    <string name="forgot">forgot password?</string>
+    <string name="error_invalid_data">error invalid data</string>
+    <string name="error_gender">Please select gender</string>
+    <string name="error_profilepic">Please select your profile</string>
 </resources>

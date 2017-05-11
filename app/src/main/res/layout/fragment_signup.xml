@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/imagebuttonbg"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/user_placeholder" />
+
+
+
+    </RelativeLayout>
+    <com.skeleton.util.customview.MaterialEditText
+        android:id="@+id/et_name"
+       style="@style/signup"
+        android:inputType="text"
+        android:maxLength="40"
+        android:hint="@string/name"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding">
+        <com.skeleton.util.customview.MaterialEditText
+            android:id="@+id/et_countrycode"
+           style="@style/signup"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:text="@string/countrycode"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/button_height_normal"
+            android:background="@color/gray"
+            />
+    <com.skeleton.util.customview.MaterialEditText
+        android:id="@+id/et_phone"
+        android:layout_width="0dp"
+        android:layout_weight="0.8"
+        style="@style/signup"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:hint="@string/phone_number"/>
+
+    </LinearLayout>
+    <com.skeleton.util.customview.MaterialEditText
+        android:id="@+id/et_email"
+        style="@style/signup"
+        android:hint="@string/email"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="wrap_content"
+            style="@style/signup"
+            android:maxLines="2"
+            android:text="@string/gender"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            />
+<RadioGroup
+    android:id="@+id/rdgrp_gender"
+    style="@style/signup"
+    android:orientation="horizontal"
+    >
+    <RadioButton
+        android:id="@+id/rdbtn_male"
+       style="@style/signup"
+        android:layout_width="wrap_content"
+        android:text="@string/male"
+        />
+    <RadioButton
+        android:id="@+id/rdbtn_female"
+        style="@style/signup"
+        android:layout_width="wrap_content"
+        android:text="@string/female"/>
+</RadioGroup>
+    </LinearLayout>
+    <com.skeleton.util.customview.MaterialEditText
+        android:id="@+id/et_dob"
+       style="@style/signup"
+        android:hint="@string/dob"/>
+    <com.skeleton.util.customview.MaterialEditText
+        android:id="@+id/et_pass"
+       style="@style/signup"
+        android:hint="@string/password"
+        />
+    <com.skeleton.util.customview.MaterialEditText
+        android:id="@+id/et_cnfrm_pass"
+        style="@style/signup"
+        android:hint="@string/confirm_password"
+       />
+    <CheckBox
+        android:id="@+id/cb_toc"
+        style="@style/signup"
+        android:gravity="start"
+        android:text="@string/tv_toc" />
+        <Button
+            android:id="@+id/btn_signup"
+            style="@style/signup"
+            android:text="@string/signup"
+            android:layout_width="@dimen/post_image_height"
+            android:layout_marginStart="70dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_selector_primary_color"/>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
