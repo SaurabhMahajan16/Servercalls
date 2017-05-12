@@ -112,7 +112,9 @@ public class SplashActivity extends BaseActivity implements FCMTokenInterface {
     @Override
     public void onTokenReceived(final String token) {
         Log.e(TAG, token);
-        startActivity(new Intent(this, TestClassLocation.class));
+
+        startActivity(new Intent(this, SignUpLoginActivity.class));
+
     }
 
     @Override

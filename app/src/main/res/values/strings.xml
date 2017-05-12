@@ -77,4 +77,7 @@
     <string name="error_invalid_data">error invalid data</string>
     <string name="error_gender">Please select gender</string>
     <string name="error_profilepic">Please select your profile</string>
+    <string name="otp_text">Please Enter OTP number you have recieved as an SMS on phone no :</string>
+    <string name="resend">Resend OTP</string>
+    <string name="edit_numbertext">Edit Number</string>
 </resources>

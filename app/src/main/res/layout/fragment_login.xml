@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:focusableInTouchMode="false"
+    >
+
+<android.support.v4.widget.NestedScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+<LinearLayout
     android:id="@+id/ll_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -52,7 +66,7 @@
         style="@style/signup"
         android:layout_margin="@dimen/activity_vertical_margin"
         android:layout_marginBottom="0dp"
-        android:background="@drawable/button_pressed_secondary"
+        android:background="@drawable/button_selector_primary_color"
         android:text="@string/signin"
         android:textColor="@color/white"
         android:textStyle="bold" />
@@ -62,8 +76,10 @@
         style="@style/signup"
         android:layout_marginEnd="@dimen/activity_vertical_margin"
         android:layout_marginStart="@dimen/activity_vertical_margin"
-        android:background="@drawable/button_selector_primary_color"
+        android:background="@drawable/button_pressed_secondary"
         android:text="@string/signinfb"
         android:textColor="@color/white"
         android:textStyle="bold" />
 </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>

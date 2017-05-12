@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.skeleton.activity.OTPActivity">
+    <include android:id="custom_toolbar"
+        layout="@layout/custom_toobar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/post_image_height">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/unlocked" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/styleforweight"
+            android:layout_marginEnd="@dimen/default_padding_top"
+            android:background="@drawable/otp_button"
+            android:drawableStart="@drawable/resend_icon"
+            android:text="@string/resend"
+            android:textColor="@color/otp_screen" />
+
+        <TextView
+            style="@style/styleforweight"
+            android:layout_marginStart="@dimen/default_padding_top"
+            android:background="@drawable/otp_button"
+            android:drawableStart="@drawable/edit_num"
+            android:text="@string/edit_numbertext"
+            android:textColor="@color/otp_screen" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_large"
+        android:padding="@dimen/padding">
+
+        <TextView
+            style="@style/otplayout"
+
+            android:text="@string/otp_text"
+/>
+        <TextView
+            style="@style/otplayout" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/spacing_large"
+        android:padding="@dimen/default_padding_top">
+        <com.skeleton.util.customview.MaterialEditText
+            android:id="@+id/et_otp1"
+            app:met_hideUnderline="true"
+           style="@style/styleforweight"
+            android:drawableBottom="@drawable/otp_text_field"
+            />
+        <com.skeleton.util.customview.MaterialEditText
+            android:id="@+id/et_otp2"
+            style="@style/styleforweight"
+            app:met_hideUnderline="true"
+            android:drawableBottom="@drawable/otp_text_field"/>
+        <com.skeleton.util.customview.MaterialEditText
+            android:id="@+id/et_otp3"
+            style="@style/styleforweight"
+            app:met_hideUnderline="true"
+            android:drawableBottom="@drawable/otp_text_field"/>
+        <com.skeleton.util.customview.MaterialEditText
+            android:id="@+id/et_otp4"
+            style="@style/styleforweight"
+            app:met_hideUnderline="true"
+            android:drawableBottom="@drawable/otp_text_field"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
