@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context="com.skeleton.activity.OTPActivity">
-    <include android:id="custom_toolbar"
+    <include android:id="@+id/custom_toolbar"
         layout="@layout/custom_toobar"/>
 
     <RelativeLayout
@@ -30,7 +30,7 @@
         android:orientation="horizontal">
 
         <TextView
-            style="@style/styleforweight"
+            style="@style/otplayout"
             android:layout_marginEnd="@dimen/default_padding_top"
             android:background="@drawable/otp_button"
             android:drawableStart="@drawable/resend_icon"
@@ -38,7 +38,7 @@
             android:textColor="@color/otp_screen" />
 
         <TextView
-            style="@style/styleforweight"
+            style="@style/otplayout"
             android:layout_marginStart="@dimen/default_padding_top"
             android:background="@drawable/otp_button"
             android:drawableStart="@drawable/edit_num"
@@ -73,22 +73,22 @@
         <com.skeleton.util.customview.MaterialEditText
             android:id="@+id/et_otp1"
             app:met_hideUnderline="true"
-           style="@style/styleforweight"
+           style="@style/otpweightlayout"
             android:drawableBottom="@drawable/otp_text_field"
             />
         <com.skeleton.util.customview.MaterialEditText
             android:id="@+id/et_otp2"
-            style="@style/styleforweight"
+            style="@style/otpweightlayout"
             app:met_hideUnderline="true"
             android:drawableBottom="@drawable/otp_text_field"/>
         <com.skeleton.util.customview.MaterialEditText
             android:id="@+id/et_otp3"
-            style="@style/styleforweight"
+            style="@style/otpweightlayout"
             app:met_hideUnderline="true"
             android:drawableBottom="@drawable/otp_text_field"/>
         <com.skeleton.util.customview.MaterialEditText
             android:id="@+id/et_otp4"
-            style="@style/styleforweight"
+            style="@style/otpweightlayout"
             app:met_hideUnderline="true"
             android:drawableBottom="@drawable/otp_text_field"/>
 

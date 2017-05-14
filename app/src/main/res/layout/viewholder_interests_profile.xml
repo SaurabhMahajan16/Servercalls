@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/viewgroup">
+    <de.hdodenhof.circleimageview.CircleImageView
+       style="@style/wrap"
+        android:background="@drawable/imagebutton_round"
+        android:src="@drawable/my_profile_ph"
+        />
+    <TextView
+       style="@style/wrap"
+        android:padding="@dimen/padding"/>
+
+
+
+</LinearLayout>

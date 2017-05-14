@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/viewgroup"
+    android:layout_margin="@dimen/spacing_small">
+
+    <RelativeLayout
+        android:id="@+id/ll_item"
+        style="@style/viewgroup"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_small">
+
+        <TextView
+            android:id="@+id/tv_item"
+            style="@style/viewholdercontent"
+            android:drawableEnd="@drawable/height_dropdown"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/tv_itemcontent"
+            style="@style/viewholdercontent"
+            android:layout_below="@id/tv_item"
+            android:textSize="@dimen/font_large"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_itemcontent"
+            android:background="@color/transparent_black" />
+
+    </RelativeLayout>
+
+</LinearLayout>

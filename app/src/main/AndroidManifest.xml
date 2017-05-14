@@ -12,6 +12,11 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -66,9 +71,14 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".activity.DisplayActivity"></activity>
-        <activity android:name=".activity.SignUpLoginActivity"></activity>
-        <activity android:name=".activity.OTPActivity"></activity>
+        <activity android:name=".activity.DisplayActivity" />
+        <activity android:name=".activity.SignUpLoginActivity" />
+        <activity android:name=".activity.OTPActivity" />
+        <activity android:name=".activity.DrawerActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".activity.ProfileSetupActivity"></activity>
     </application>
 
 </manifest>

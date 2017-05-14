@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/drawer_bg">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sidepaneimagebglength">
+        <de.hdodenhof.circleimageview.CircleImageView
+            style="@style/wrap"
+           android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/side_menu_user_pic"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_account"
+        style="@style/navdrawer"
+       android:gravity="center"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:text="YOUR ACCOUNT"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignStart="@+id/tv_datepost"
+        android:layout_alignEnd="@+id/tv_datepost" />
+        <TextView
+            android:id="@+id/tv_datepost"
+            android:layout_below="@id/tv_account"
+            style="@style/navdrawer"
+            android:text="@string/dateposttext"
+            android:drawablePadding="@dimen/padding"
+            android:drawableStart="@drawable/date_posts"
+            android:layout_alignStart="@+id/tv_settings"
+            android:layout_alignEnd="@+id/tv_mydate" />
+        <TextView
+            android:layout_below="@+id/tv_datepost"
+            android:id="@+id/tv_mydate"
+            style="@style/navdrawer"
+            android:drawablePadding="@dimen/padding"
+            android:text="@string/my_dates"
+            android:drawableStart="@drawable/my_dates"
+            android:layout_alignStart="@+id/tv_settings"
+            android:layout_alignEnd="@+id/tv_settings" />
+        <TextView
+            style="@style/navdrawer"
+            android:layout_below="@id/tv_mydate"
+            android:id="@+id/tv_fav"
+            android:text="My Favourites"
+            android:drawableStart="@drawable/fav"
+            android:drawablePadding="@dimen/padding"
+            android:padding="@dimen/padding"
+            android:layout_alignStart="@+id/tv_mydate"
+            android:layout_alignEnd="@+id/tv_settings" />
+        <TextView
+            android:id="@+id/tv_membership"
+            style="@style/navdrawer"
+            android:text="Memberships"
+            android:layout_below="@id/tv_fav"
+            android:drawableStart="@drawable/mmemberships"
+            android:drawablePadding="@dimen/padding"
+            android:padding="@dimen/padding"
+            android:layout_alignStart="@+id/tv_fav"
+            android:layout_alignEnd="@+id/tv_settings" />
+        <TextView
+            android:layout_below="@id/tv_membership"
+            android:id="@+id/tv_settings"
+            style="@style/navdrawer"
+            android:text="Account Settings"
+            android:drawableStart="@drawable/settings"
+            android:drawablePadding="@dimen/padding"
+            android:padding="0dp"
+            />
+        <TextView
+            android:layout_below="@id/tv_settings"
+            android:id="@+id/tv_logout"
+            style="@style/navdrawer"
+            android:layout_marginTop="@dimen/spacing_xlarge"
+            android:text="Logout"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_alignStart="@+id/tv_fav"
+            android:layout_alignEnd="@+id/tv_settings"
+
+            />
+        <ImageView
+            android:layout_below="@id/tv_logout"
+            android:id="@+id/iv_cross"
+            style="@style/navdrawer"
+            android:src="@drawable/side_menu_exut"
+            android:gravity="center"
+            android:layout_alignStart="@+id/tv_fav"
+            android:layout_alignEnd="@+id/tv_settings"
+
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

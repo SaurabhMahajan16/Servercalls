@@ -1,36 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.Toolbar
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentInsetEnd="0dp"
+    app:contentInsetStart="0dp"
+    android:background="@drawable/top_bar"
+    android:layout_centerInParent="true"
     android:minHeight="?attr/actionBarSize"
-    android:background="@drawable/sign_up_screen_image"
-    >
-    <LinearLayout
+   >
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:minHeight="?attr/actionBarSize"
         android:orientation="horizontal"
-        android:background="@color/transparent"
-
-        android:layout_margin="0dp">
+        >
         <TextView
             android:id="@+id/tv_drawer"
             android:drawableStart="@drawable/icon_back"
             style="@style/toolbarLayout"
-            android:layout_width="wrap_content" />
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="@dimen/spacing_small"/>
         <TextView
 
             android:id="@+id/tv_title"
             style="@style/toolbarLayout"
-            android:layout_weight="3.8"
             android:gravity="center"
             android:textSize="@dimen/font_large"
             android:textColor="@color/white"
             android:padding="@dimen/padding"
             android:layout_height="match_parent"
-            android:text="Phone Number Verification"/>
+            android:layout_toEndOf="@+id/tv_drawer" />
+        <ImageButton
+           style="@style/toolbarLayout"
+            android:layout_marginStart="@dimen/spacing_normal"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/tv_title" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
 </android.support.v7.widget.Toolbar>
